@@ -177,7 +177,7 @@ Tindercardsjs = (function () {
 $(document).ready(function () {
 
   $.ajax({
-    url: '/api/getHouses',
+    url: 'http://localhost:3000/api/getHouses',
     type: "GET",
     dataType: 'json',
     success: function(response) {
@@ -185,7 +185,7 @@ $(document).ready(function () {
       makeCard(response);
     },
     error: function(error) {
-      alert(JSON.stringify(error));
+      alert(JSON.stringify(error) + "hello");
     }
   });
 

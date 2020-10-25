@@ -2,7 +2,7 @@
 var MongoClient = require('mongodb').MongoClient
   , assert = require('assert');
 
-var url = 'mongodb://hack:curtis@apollo.modulusmongo.net:27017/yv3ubygU';
+var url = 'mongodb://localhost:27017/casamatic';
 
 function getLocationByZip(zipCode) {
     return zipsMap[zipCode];
